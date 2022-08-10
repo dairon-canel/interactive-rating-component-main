@@ -8,39 +8,37 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
+
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
+  <div class="rating__state">
+    <div class="title__icon">
+      <img src="./images/icon-star.svg" alt="star" height="auto" width="auto"/>
+    </div>
+    <div class="rating__title">How did we do?</div>
+    <p class="rating__description">Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+    <div class="rating__section">
+      <button class="rate__element">1</button>
+      <button class="rate__element">2</button>
+      <button class="rate__element">3</button>
+      <button class="rate__element">4</button>
+      <button class="rate__element">5</button>
+    </div>
+    <button class="rating__btn">Submit</button>
+  </div>
+  <div class="thank-you__state">
+    <div class="thank-you__image">
+      <img src="./images/illustration-thank-you.svg" alt="thank-you" width="100px" height="auto" />
+    </div>
+    <div class="selected__rate">You selected 4 out of 5</div>
+    <div class="rating__title">Thank you!</div>
+    <div class="thank-you__description">We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
+</div>
+  </div>
 
-  <!-- Thank you state end -->
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
