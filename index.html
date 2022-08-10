@@ -8,11 +8,12 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css" >
+  <script src="./index.js" defer></script>
 
 </head>
 <body>
-  <div class="rating__state">
+  <div id="rating__state" class="rating__state">
     <div class="title__icon">
       <img src="./images/icon-star.svg" alt="star" height="auto" width="auto"/>
     </div>
@@ -20,19 +21,19 @@
     <p class="rating__description">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
     <div class="rating__section">
-      <button class="rate__element">1</button>
-      <button class="rate__element">2</button>
-      <button class="rate__element">3</button>
-      <button class="rate__element">4</button>
-      <button class="rate__element">5</button>
+      <button id="button_1" onclick="handleRate(1)" class="rate__element">1</button>
+      <button id="button_2" onclick="handleRate(2)" class="rate__element">2</button>
+      <button id="button_3" onclick="handleRate(3)" class="rate__element">3</button>
+      <button id="button_4" onclick="handleRate(4)" class="rate__element">4</button>
+      <button id="button_5" onclick="handleRate(5)" class="rate__element">5</button>
     </div>
-    <button class="rating__btn">Submit</button>
+    <button onclick="handleRatingSubmit()" class="rating__btn">Submit</button>
   </div>
-  <div class="thank-you__state">
+  <div id="thank-you__state" class="thank-you__state">
     <div class="thank-you__image">
       <img src="./images/illustration-thank-you.svg" alt="thank-you" width="100px" height="auto" />
     </div>
-    <div class="selected__rate">You selected 4 out of 5</div>
+    <button id="button_thankyou" class="selected__rate" onclick="handleThankyouSubmit()">You selected 4 out of 5</button>
     <div class="rating__title">Thank you!</div>
     <div class="thank-you__description">We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
