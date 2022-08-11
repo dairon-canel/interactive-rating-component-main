@@ -13,11 +13,11 @@
 
 </head>
 <body>
-  <div id="rating__state" class="rating__state">
-    <div class="title__icon">
-      <img src="./images/icon-star.svg" alt="star" height="auto" width="auto"/>
+  <section id="rating__state" class="rating__state">
+    <div role="img" class="title__icon">
+      <img src="./images/icon-star.svg" alt="star" height="16" width="17"/>
     </div>
-    <div class="rating__title">How did we do?</div>
+    <h1 class="rating__title">How did we do?</h1>
     <p class="rating__description">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
     <div class="rating__section">
@@ -28,21 +28,21 @@
       <button id="button_5" onclick="handleRate(5)" class="rate__element">5</button>
     </div>
     <button onclick="handleRatingSubmit()" class="rating__btn">Submit</button>
-  </div>
-  <div id="thank-you__state" class="thank-you__state">
-    <div class="thank-you__image">
-      <img src="./images/illustration-thank-you.svg" alt="thank-you" width="100px" height="auto" />
+  </section>
+  <section id="thank-you__state" class="thank-you__state">
+    <div role="img" class="thank-you__image">
+      <img src="./images/illustration-thank-you.svg" alt="thank-you" width="100" height="66" />
     </div>
     <button id="button_thankyou" class="selected__rate" onclick="handleThankyouSubmit()">You selected 4 out of 5</button>
-    <div class="rating__title">Thank you!</div>
+    <h1 class="rating__title">Thank you!</h1>
     <div class="thank-you__description">We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
-</div>
-  </div>
+    </div>
+  </section>
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/RyuzakCoder">Dairon Canel</a>.
-  </div>
+  </footer>
 </body>
 </html>
